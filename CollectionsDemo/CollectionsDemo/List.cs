@@ -14,6 +14,8 @@ namespace CollectionsDemo
       list.Add(4);
       list.Add(5);
 
+      //for...
+
       Print(list);
     }
   }

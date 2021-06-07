@@ -8,12 +8,16 @@ namespace CollectionsDemo
     {
       //var array = new int[] {1, 2, 3, 4, 5};  
 
-      var array = new int[5]; 
+      const int maxSize = 5;
+
+      var array = new int[maxSize]; 
       
-      for (var i = 0; i < 5;)
+      for (var i = 0; i < maxSize; ++i)
       {
-        array[i] = ++i; //curious?
+        array[i] = i + 1;
       }
+
+      //array.?
 
       Print(array.Reverse());
 
