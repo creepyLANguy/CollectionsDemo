@@ -34,15 +34,23 @@ namespace CollectionsDemo
     private static string GetName(object o)
     {
       var name = o.GetType().Name;
-
       var index = name.IndexOf(">", StringComparison.Ordinal);
-      name = index > 0 ? name.Substring(0, index) : name;
-      
-      name = Regex.Replace(name, @"[^a-zA-Z\.]", string.Empty);
+      var trimmed = index > 0 ? name.Substring(0, index) : name;
+      var reduced = Regex.Replace(trimmed, @"[^a-zA-Z\.]", string.Empty);
+      var final = reduced + ((name.Contains("[") && name.Contains("]")) ? "[]" : "");
 
-      name += (name.Contains("[") && name.Contains("]")) ? "[]" : "";
+      return final;
+    }
 
-      return name;
+    private static void Output(IEnumerable<int> collection)
+    {
+      Console.WriteLine(GetName(collection) + " :\n");
+
+      foreach (var item in collection)
+      {
+        Console.WriteLine(item);
+      }
+      Console.Write("\n\n");
     }
   }
 }

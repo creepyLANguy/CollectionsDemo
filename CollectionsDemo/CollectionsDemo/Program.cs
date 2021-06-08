@@ -25,9 +25,9 @@ namespace CollectionsDemo
 
       //Demo_Dictionary();
 
-      Demo_HashSet();
-
-      //Demo_Activity();
+      //Demo_HashSet();
+      
+      Demo_Activity();
     }
   }
 }
