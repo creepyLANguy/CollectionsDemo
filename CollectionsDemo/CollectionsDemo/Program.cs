@@ -6,15 +6,28 @@ namespace CollectionsDemo
   {
     private static void Main()
     {
-      Demo_Array();
-      
-      Demo_List();
+      Console.Write("\n\n");
 
-      Demo_Stack();
-
-      Demo_Queue();
+      RunDemos();
 
       Console.ReadLine();
+    }
+
+    private static void RunDemos()
+    {
+      //Demo_Array();
+
+      //Demo_List();
+
+      //Demo_Stack();
+
+      //Demo_Queue();
+
+      //Demo_Dictionary();
+
+      Demo_HashSet();
+
+      //Demo_Activity();
     }
   }
 }

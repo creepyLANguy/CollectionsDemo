@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 
 namespace CollectionsDemo
 {
@@ -13,8 +13,6 @@ namespace CollectionsDemo
       list.Add(3);
       list.Add(4);
       list.Add(5);
-
-      //for...
 
       Print(list);
     }

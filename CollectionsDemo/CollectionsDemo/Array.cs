@@ -17,8 +17,6 @@ namespace CollectionsDemo
 
       //array.
 
-      Print(array.Reverse());
-
       Print(array);
     }
   }
