@@ -8,7 +8,7 @@ namespace CollectionsDemo
   {
     private static void Print(object o)
     {
-      Console.WriteLine("\n"+o.ToString());
+      Console.WriteLine("\n" + o+ "\n");
     }
 
     private static void Print(IEnumerable<int> collection)

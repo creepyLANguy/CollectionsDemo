@@ -48,7 +48,7 @@ using System.Linq;
   - You must ingest all rows of the input. (Best start with the example class containing the array)
    
   Tips: 
-  - Rely on the nature of the collections of the collections we've discussed today and use them to achieve the output, 
+  - Rely on the nature of the collections we've discussed today and use them to achieve the output, 
     without resorting to traditional methods or manual operations on the data.
   - Think about transforming one collection into another, and into another... 
   - Curiously, you may notice that the input has duplicate rows... 👀
@@ -90,8 +90,9 @@ namespace CollectionsDemo
       var set = new HashSet<int>(input);
       Output(set);
 
-      var list = new List<int>(set); //var list = set.ToList();
+      var list = new List<int>(set);
       list.Sort();
+      //list.Reverse(); //Don't call Reverse() if we want bonus marks. Instead, try converting to another data structure to achieve the same result. 
       Output(list);
 
       var stack = new Stack<int>(list);

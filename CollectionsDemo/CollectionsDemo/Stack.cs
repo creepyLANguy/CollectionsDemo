@@ -14,6 +14,9 @@ namespace CollectionsDemo
       stack.Push(4);
       stack.Push(5);
 
+      //stack.Pop(); //Remember, exception when popping an empty stack, just like trying to reference an element in an index of an array that does not exist.
+      //stack.Peek();
+
       Print(stack);
     }
   }

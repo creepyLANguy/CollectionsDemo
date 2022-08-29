@@ -14,6 +14,11 @@ namespace CollectionsDemo
       list.Add(4);
       list.Add(5);
 
+      //list.Add(3);
+      //list.Add(3);
+
+      //list.Remove()?
+
       Print(list);
     }
   }

@@ -14,6 +14,8 @@ namespace CollectionsDemo
       queue.Enqueue(4);
       queue.Enqueue(5);
       
+      //queue.
+
       Print(queue);
      }
   }
